@@ -22,6 +22,11 @@ public class Post {
     private int isPinned;
     private int markedAsAds;
     private boolean favorite;
+    private PostSource postSource;
+    private Geo geo;
+    private int signerId;
+    private Donut donut;
+    private int postponedId;
 
     public int getId() {
         return id;
@@ -189,6 +194,46 @@ public class Post {
 
     public void setFavorite(boolean favorite) {
         this.favorite = favorite;
+    }
+
+    public PostSource getPostSource() {
+        return postSource;
+    }
+
+    public void setPostSource(PostSource postSource) {
+        this.postSource = postSource;
+    }
+
+    public Geo getGeo() {
+        return geo;
+    }
+
+    public void setGeo(Geo geo) {
+        this.geo = geo;
+    }
+
+    public int getSignerId() {
+        return signerId;
+    }
+
+    public void setSignerId(int signerId) {
+        this.signerId = signerId;
+    }
+
+    public Donut getDonut() {
+        return donut;
+    }
+
+    public void setDonut(Donut donut) {
+        this.donut = donut;
+    }
+
+    public int getPostponedId() {
+        return postponedId;
+    }
+
+    public void setPostponedId(int postponedId) {
+        this.postponedId = postponedId;
     }
 
 }
